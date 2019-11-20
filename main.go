@@ -6,7 +6,6 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Bri997/golang-simple-restful-api/src/simple"
 	"github.com/gorilla/mux"
 )
 
@@ -44,7 +43,7 @@ func main() {
 }
 
 func doSimple() {
-	sm := simple.SimpleMessage{
+	sm := example_simple.SimpleMessage{
 		Id:         123456,
 		IsSimple:   true,
 		Name:       "This is my message",
