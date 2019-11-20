@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/Bri997/golang-simple-restful-api/src/simple"
 	"github.com/gorilla/mux"
 )
 
@@ -39,4 +40,15 @@ func handleRequests() {
 }
 func main() {
 	handleRequests()
+	doSimple()
+}
+
+func doSimple() {
+	sm := simple.SimpleMessage{
+		Id:         123456,
+		IsSimple:   true,
+		Name:       "This is my message",
+		SampleList: []int34{1, 3, 7, 9},
+	}
+	fmt.Println(sm)
 }
