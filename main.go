@@ -43,7 +43,7 @@ func main() {
 }
 
 func doSimple() {
-	sm := example_simple.SimpleMessage{
+	sm := simplepb.SimpleMessage{
 		Id:         123456,
 		IsSimple:   true,
 		Name:       "This is my message",
